@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe - Gamiverse</title>
-    <link rel="stylesheet" href="./tic-tac-toe.css">
+    <link rel="stylesheet" href="./public/tic-tac-toe.css">
 </head>
 <body>
-    <div class="game">
-    <div class="status"></div>
-    <div class="grid">
-        <div class="cell" data-index="0"></div>
-        <div class="cell" data-index="1"></div>
-        <div class="cell" data-index="2"></div>
-        <div class="cell" data-index="3"></div>
-        <div class="cell" data-index="4"></div>
-        <div class="cell" data-index="5"></div>
-        <div class="cell" data-index="6"></div>
-        <div class="cell" data-index="7"></div>
-        <div class="cell" data-index="8"></div>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button class="reset-btn">Reset Game</button>
+        <p class="status"></p>
     </div>
-    <button class="reset-btn">Reset Game</button>
-</div>
 
-<!-- Modal Structure -->
+    <!-- Floating Game Logos (optional, for consistency) -->
+    <div class="floating-logos">
+        <img src="tic-tac-toe-logo.png" alt="Tic Tac Toe">
+        <!-- Add other floating logos as needed -->
+    </div>
+<!-- Modal HTML -->
 <div id="winnerModal" class="modal">
     <div class="modal-content">
         <span class="close-btn">&times;</span>
-        <p id="modalText">Winner message will go here</p>
+        <p id="modalText"></p>
     </div>
 </div>
 
