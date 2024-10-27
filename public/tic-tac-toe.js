@@ -19,7 +19,6 @@ const winConditions = [
 ];
 
 // Modal elements
-// Modal elements
 const winnerModal = document.getElementById('winnerModal');
 const modalText = document.getElementById('modalText');
 const closeBtn = document.querySelector('.close-btn');
