@@ -6,31 +6,6 @@ let currentPlayer = 'X';
 let gameBoard = ['', '', '', '', '', '', '', '', ''];
 let gameActive = true;
 
-// Modal elements
-const winnerModal = document.getElementById('winnerModal');
-const modalText = document.getElementById('modalText');
-const closeBtn = document.querySelector('.close-btn');
-
-// Show modal function
-function showModal(message) {
-    modalText.textContent = message;
-    winnerModal.style.display = 'flex'; // Ensure modal displays in center
-}
-
-// Close modal function
-function closeModal() {
-    winnerModal.style.display = 'none';
-}
-
-// Event listener to close modal on button click
-closeBtn.addEventListener('click', closeModal);
-
-// Event listener to close modal if clicked outside
-window.addEventListener('click', (event) => {
-    if (event.target === winnerModal) {
-        closeModal();
-    }
-});
 
 // Handle cell click event
 function handleCellClick(event) {
@@ -76,11 +51,10 @@ function checkForWinner() {
     if (roundWon) {
         statusText.textContent = `Player ${currentPlayer} wins!`;
         gameActive = false;
-        showModal(`Player ${currentPlayer} wins!`);
+
     } else if (!gameBoard.includes('')) {
         statusText.textContent = `It's a draw!`;
         gameActive = false;
-        showModal(`It's a draw!`);
     }
 }
 
@@ -91,7 +65,7 @@ function resetGame() {
     gameActive = true;
     statusText.textContent = `Player ${currentPlayer}'s turn`;
     cells.forEach(cell => (cell.textContent = ''));
-    closeModal(); // Close the modal if it's open when resetting
+    
 }
 
 // Add event listeners to all cells and the reset button
