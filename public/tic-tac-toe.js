@@ -6,18 +6,6 @@ let currentPlayer = 'X';
 let gameBoard = ['', '', '', '', '', '', '', '', ''];
 let gameActive = true;
 
-// Define winning conditions
-const winConditions = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6]
-];
-
 // Modal elements
 const winnerModal = document.getElementById('winnerModal');
 const modalText = document.getElementById('modalText');
@@ -25,8 +13,8 @@ const closeBtn = document.querySelector('.close-btn');
 
 // Show modal function
 function showModal(message) {
-    modalText.textContent = message;  // Display the message correctly
-    winnerModal.style.display = 'block';
+    modalText.textContent = message;
+    winnerModal.style.display = 'flex'; // Ensure modal displays in center
 }
 
 // Close modal function
@@ -34,10 +22,10 @@ function closeModal() {
     winnerModal.style.display = 'none';
 }
 
-// Close modal on clicking the close button
+// Event listener to close modal on button click
 closeBtn.addEventListener('click', closeModal);
 
-// Close modal if clicking outside of it
+// Event listener to close modal if clicked outside
 window.addEventListener('click', (event) => {
     if (event.target === winnerModal) {
         closeModal();
@@ -65,6 +53,17 @@ function switchPlayer() {
 
 // Check for a winner or a draw
 function checkForWinner() {
+    const winConditions = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+    
     let roundWon = false;
     for (let i = 0; i < winConditions.length; i++) {
         const [a, b, c] = winConditions[i];
@@ -73,6 +72,7 @@ function checkForWinner() {
             break;
         }
     }
+    
     if (roundWon) {
         statusText.textContent = `Player ${currentPlayer} wins!`;
         gameActive = false;
