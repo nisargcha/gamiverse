@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamiverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Game Logos (can be icons or images) -->
+        <div class="floating-logos">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/game.png" alt="Rock Paper Scissors">
+            <img src="./Assests/circle.png" alt="Guess the Word">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/game.png" alt="Rock Paper Scissors">
+            <img src="./Assests/circle.png" alt="Guess the Word">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/game.png" alt="Rock Paper Scissors">
+            <img src="./Assests/circle.png" alt="Guess the Word">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/game.png" alt="Rock Paper Scissors">
+            <img src="./Assests/circle.png" alt="Guess the Word">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/game.png" alt="Rock Paper Scissors">
+            <img src="./Assests/circle.png" alt="Guess the Word">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            <img src="./Assests/game.png" alt="Rock Paper Scissors">
+            <img src="./Assests/circle.png" alt="Guess the Word">
+            <img src="./Assests/mario.png" alt="Tic Tac Toe">
+            
+        </div>
+
+        <div class="game-links">
+            <h1>Gamiverse</h1>
+            <ul>
+                <li><a href="tic-tac-toe">Tic Tac Toe</a></li>
+                <li><a href="rock-paper-scissors">Rock Paper Scissors</a></li>
+                <li><a href="hangman">Hangman</a></li>
+                <li><a href="guesstheword">Guess the Word</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        console.log("Nisarg")
+        // Test if server is working by making a request to /ab
+        fetch('/ab')
+            .then(response => response.text())
+            .then(data => {
+                console.log('Server Response:', data);
+            })
+            .catch(error => {
+                console.log('Something went wrong with the server.');
+            });
+    </script>
+</body>
+</html>

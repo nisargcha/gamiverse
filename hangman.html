@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./public/hangman.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Hangman</h1>
+        <p id="clue">Clue: </p>
+
+        <!-- Hangman Figure -->
+        <div id="hangman-figure">
+            <div class="gallows">
+                <div class="post"></div>
+                <div class="beam"></div>
+                <div class="rope"></div>
+            </div>
+            <div class="hangman-parts">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="left-arm"></div>
+                <div class="right-arm"></div>
+                <div class="left-leg"></div>
+                <div class="right-leg"></div>
+            </div>
+        </div>
+
+        <!-- Word Display -->
+        <div id="wordDisplay" class="word-display"></div>
+
+        <!-- Messages -->
+        <p id="message"></p>
+
+        <!-- Input and Button -->
+        <input type="text" id="letterInput" placeholder="Enter a letter" maxlength="1">
+        <button id="guessButton">Guess</button>
+
+        <!-- Game Status -->
+        <div class="hangman-status">
+            <p>Wrong guesses: <span id="wrongGuesses">0</span></p>
+        </div>
+
+        <!-- Reset Button -->
+        <button class="reset-btn">Reset Game</button>
+    </div>
+
+    <script src="./public//hangman.js"></script>
+</body>
+</html>
