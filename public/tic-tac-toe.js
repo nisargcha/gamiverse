@@ -25,7 +25,7 @@ const closeBtn = document.querySelector('.close-btn');
 
 // Show modal function
 function showModal(message) {
-    modalText.textContent = message;  // Correctly display the message
+    modalText.textContent = message;  // Display the message correctly
     winnerModal.style.display = 'block';
 }
 
