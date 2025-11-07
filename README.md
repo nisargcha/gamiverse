@@ -11,12 +11,12 @@ Got it! Here’s an updated README without extra features or license information
 Try out Gamiverse [here](https://gamiverse.vercel.app).
 
 ## 📜 Table of Contents
-- [Features](#features)
-- [Games](#games)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- Features
+- Games
+- Tech Stack
+- Installation
+- Usage
+- Contributing
 
 ## ✨ Features
 
@@ -76,8 +76,7 @@ Contributions are welcome! If you’d like to improve the project, feel free to 
 
 ### 📬 Contact
 
-For questions or feedback, reach out at [your-email@example.com](mailto:your-email@example.com).
+For questions or feedback, reach out at [your-email@example.com](mailto:sunisarg05@example.com).
 
 ---
-
-This README is straightforward and only includes features currently in the game. You can add images and customize links as needed!
+\
